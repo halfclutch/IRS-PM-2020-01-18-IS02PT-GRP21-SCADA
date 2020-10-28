@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<img src="{{url_for('static', filename='image_01.jpg')}}" width="100%";>
+
+<section class="landing-section">
+  <h2 style="background-color:#1E90FF">Worried about a mole or new spot?<h2>
+  <h5 style="color:blue;">Check up with our phone app now.<h5> 
+</section>
+
+<div class="container01">
+<div class="row">
+<div class="col-sm">
+<img src="{{url_for('static', filename='image_02.jpg')}}" width="100%";>
+</div>
+<div class="col-sm my-auto">
+<blockquote class="blockquote">
+<p class="mb-0">Skin cancer is one of the top ten most frequent cancers in Singapore. 
+There has been a general rising trend in the incidence of this cancer in both men and women over the last 40 years.
+Skin cancer ranks 6th in males cancers and 7th in females cancers in Singapore.
+One of the top ten most frequent cancers in Singapore.</p>
+<p class="blockquote-footer">National Cancer Center Singapore</footer>
+</blockquote>
+</div>
+</div>
+</div>
+
+<form class="form-group border border-primary py-3" action="{{ url_for('index') }}" method="post" enctype="multipart/form-data">
+   <h5> Enter your details and upload the mole image</h5>
+   <br>
+   <div class="row">
+   <label class="col-sm-3">{{ form.Age.label }}</label>
+   <p class="col-sm-7" >{{ form.Age() }}</p>
+   </div>
+   
+   <div class="row">
+   <label class="col-sm-3">{{ form.Gender.label }}</label>
+   <p class="col-sm-7">{{ form.Gender() }}</p>
+   </div>
+   
+   <div class="row">
+   <label class="col-sm-3">{{ form.Mole_location.label }}</label>
+   <p class="col-sm-7">{{ form.Mole_location() }}</p>
+   </div>
+   
+   <div class="row">
+   <label class="col-sm-3">{{ form.Image.label }}</label>
+   <p class="col-sm-7"> {{ form.Image() }}</p>
+   </div>
+   
+   <div class="row">
+   <input type="submit" value="Upload" class="btn btn-primary btn-small">
+   </div>
+</form>
+ 
+{% endblock %}
+
+
+
+

@@ -1,99 +1,65 @@
-
-.container {
-  position: relative;
-  text-align: center;
-  margin: 0px;
-  padding: 0px;
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.landing-section {
+.landing-section{
   position: absolute;
-  bottom: 8px;
-  right: 20px;
+  top: 100px;
+  left: 450px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
 }
 
-.landing-main-text {
-    color: #0000FF;
-    font-weight: bold;
+.container{
+  flex: 1 0 auto;
 }
 
-.brand-text {
-    color: white
+.container01{
+margin: auto;
+padding-top: 50px;
+padding-bottom: 30px;
+max-width: 1000px;
+text-align: justify;
+font-style: italic;
 }
 
-.fieldset {
-    font-family: 'Concert One', cursive;
+.container02{
+margin: auto;
+padding-top:20px;
+padding-bottom: 20px;
+max-width: 1000px;
+text-align: justify;
+font-style: italic;
 }
 
-.row {
-    color: black
-}
-
-.form-layout {
-    margin-right: 200px;
-    margin-left: 200px;
-    padding-right: 200px;
-    padding-left: 200px;
+.form-group{
+    margin-right: 500px;  
+    margin-left: 500px;
     margin-top: 20px;
-
+    margin-bottom: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
-.button {
-  right: 0px;
-  margin: 20px;
-  align: right
+Input#Age,select#Gender,select#Mole_location{
+width: 100px;
 }
 
-input#id_old_peak.numberinput.form-control, input#id_max_heart_beat.numberinput.form-control,
-input#id_age.numberinput.form-control, input#id_chol.numberinput.form-control,input#id_trestbps.numberinput.form-control,
-input#id_age.numberinput.form-control, input#id_chol.numberinput.form-control,input#id_trestbps.numberinput.form-control,
-div.custom-control.custom-radio {
-  background: #D8D8D8;
-  width: 400px
+footer.text-center.py-3
+{
+    background: lightgray;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height:50px;
 }
 
-label.requiredField {
-  background: #ADD8E6;
-  width: 400px
-}
-
-body, html {
-  height: 100%;
-}
-
-.bg {
-  background-image: url(image_background.jpg);
-  height: 180%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-
-div.buttonHolder {
+input.btn.btn-primary.btn-small
+{
     position: relative;
-    right: -300px;
-    top:  -30px
-}
-
-footer.text-center.py-3 {
-    background: lightgray
-}
-
-table, th, td {
-  border: 2px solid black;
-  margin-left: 20px;
-  margin-top: 0px;
-
-}
-
-.predict {
-    margin-left: 10px;
-    padding-left: 10px;
-    font-size: 25px;
-}
-
-.graphic {
-    margin-right: 100px;
-    padding-right: 100px;
+    left: 400px;
 }
